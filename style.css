@@ -71,6 +71,8 @@
     background-color:#cdcdcd;
     display: grid;
     place-items: center;
+    max-width: 500px;
+    margin: auto;
   }
   h1{
     color: #074f0a;
