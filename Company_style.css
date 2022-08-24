@@ -14,7 +14,11 @@
     padding: 10px 10px;
     text-decoration: none;
   }
-  
+  .photo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /* The dropdown container */
   .dropdown {
     float: left;
