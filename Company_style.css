@@ -69,11 +69,11 @@
   }
   body{
     background-color:#cdcdcd;
-    display: grid;
     place-items: center;
     font-family: "Lato", Arial, sans-serif;
     height: 100vh;
-    margin: 0;
+    max-width: 500px;
+    margin: auto;
   }
   h1{
     color: #074f0a;
@@ -81,6 +81,7 @@
     font-size: 40px;
     text-align: center;
     letter-spacing: 1px;
+    max-width: 500px;
   } 
   h2{
     color:#074f0a;
@@ -88,6 +89,7 @@
     font-size: 20px;
     text-align:center;
     letter-spacing: 1px;
+    max-width: 500px;
   }
   h3{
     color:#f3ecdc;
@@ -96,18 +98,21 @@
     font-size: 20px;
     text-align:center;
     letter-spacing: 1px;
+    max-width: 500px;
   }
   p{
     color:black;
     font-family: arial;
     font-size: 16px;
     text-align: left;
+    max-width: 500px;
   }
   ol{
     color:black;    
     font-family: arial;
     font-size: 16px;
     text-align: left;
+    max-width: 500px;
   }
   button{
     color:#074f0a;

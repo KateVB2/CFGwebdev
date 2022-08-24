@@ -3,6 +3,8 @@
     background-color: #8AA78C;
     overflow: hidden;
     font-family: arial;
+    max-width: 500px;
+    margin: auto;
   }
   
   /* Links inside the navbar */
@@ -177,7 +179,6 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 50%;
   position: relative;
   margin: auto;
 }
