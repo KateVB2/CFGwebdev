@@ -68,7 +68,9 @@
     display: block;
   }
   body{
-    background-color: white;
+    background-color:#cdcdcd;
+    display: grid;
+    place-items: center;
   }
   h1{
     color: #074f0a;
