@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Material comparisons</title>
+  <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+<script src="compare style.js" async></script>
+<div class="navbar">
+ <a href="index.html"> Home </a>
+  <a href="#newmodel">New Model</a>
+  <a href="compare.html">Compare</a>
+  <div class="dropdown">
+    <button class="dropbtn">Clothing Solutions
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">BAM Clothing</a>
+      <a href="#">Hemp Clothing</a>
+      <a href="#">Other Solutions</a>
+              </div>
+            </div>
+          </div>
+    <div>
+      <h1>Compare Sustainable Materials</h1>
+          </div>
+          <div>
+            <table id="comparison">
+              <th> Material </th>
+              <th> Does it Regrow without Replanting? </th> 
+              <th> Does it Require Fertiliser? </th>
+              <th> Is it Water Intensive? </th> 
+              <th> Does it Improve or Degrade Soil Quality? </th>
+              <th> Does it Grow Quickly? </th>
+      
+                <tr id = "Bamboo">
+                  <td> <div class = "bambooButton">
+                    <button onclick= "reveal(Bamboo)" class="Button"> Bamboo </button>
+                  </div></td> 
+                  <td> Yes </td> 
+                  <td> No </td> 
+                  <td> No </td> 
+                  <td> Improve </td> 
+                  <td> Yes </td>
+                </tr>
+                <tr id = "Hemp">
+                  <td> <div class = "hempButton"> 
+                    <button onclick="reveal(Hemp)" class="Button"> Hemp </button>
+                  </div> </td> 
+                  <td> Unsure </td> 
+                  <td> Yes- A Little </td> 
+                  <td> Yes </td> 
+                  <td> Improve </td> 
+                  <td> Yes </td> 
+                </tr>
+                <tr id = "Cork">
+                <td> <div class = "corkButton"> 
+                  <button onclick="reveal(Cork)" class="Button"> Cork </button>
+                </div> </td> 
+                  <td> Yes </td> 
+                  <td> No </td> 
+                  <td> No </td> 
+                  <td> Improve </td>
+                  <td> No </td> 
+                </tr>
+                <tr id = "Cotton">
+                 <td> <div class = "cottonButton"> 
+                  <button onclick="reveal(Cotton)" class="Button"> Cotton </button>
+                </div>
+         </td> 
+                 <td> No </td>
+                 <td> Yes- Lots </td> 
+                 <td> Yes </td> 
+                 <td> Degrade </td> 
+                 <td> No </td> 
+                </tr>
+              </table>
+           </div>
+          </div>
+          <div>
+             <p>
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              &nbsp;
+            </p> 
+          </div>
+           <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+         <!-- Full-width images with number and caption text -->
+         <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+           <img src="images/bamboo_picture_2.webp" style="width:100%">
+          <div class="text">Bamboo</div>
+        </div>
+
+        <div class="mySlides fade">
+         <div class="numbertext">2 / 4</div>
+          <img src="images/hemp_fabric_2.jpg" style="width:100%">
+         <div class="text">Hemp</div>
+       </div>
+
+       <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/cork.jpeg" style="width:100%">
+          <div class="text">Cork</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/cotton1.avif" style="width:100%">
+        <div class="text">Cotton</div>
+    </div>
+
+       <!-- Next and previous buttons -->
+       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+          
+   </body>
+</html>
