@@ -70,7 +70,7 @@
     display: block;
   }
   body{
-    background-color:#cdcdcd;
+    background-color:#d5d5d5;
     display: grid;
     place-items: center;
     max-width: 500px;
@@ -79,28 +79,28 @@
   h1{
     color: #074f0a;
     font-family: arial;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     letter-spacing: 1px;
   } 
   h3{
     color:#074f0a;
     font-family: arial;
-    font-size: 20px;
-    text-align:left;
+    font-size: 32px;
+    text-align:center;
     letter-spacing: 1px;;
   }
   p{
     color:black;
     font-family: arial;
-    font-size: 16px;
-    text-align: left;
+    font-size: 22px;
+    text-align: center;
   }
   ol{
     color:black;    
     font-family: arial;
-    font-size: 16px;
-    text-align: left;
+    font-size: 22px;
+    text-align: center;
   }
   button{
     color:#074f0a;
