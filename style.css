@@ -70,7 +70,7 @@
     display: block;
   }
   body{
-    background-color:#d5d5d5;
+    background-color:#cdcdcd;
     display: grid;
     place-items: center;
     max-width: 500px;
@@ -121,6 +121,13 @@
     height: 4px;
     display: inline-block;
   }
+/* Photo centred */
+  .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* Comparison Table- content */
   #comparison th, #comparison td {
     text-align: center;
