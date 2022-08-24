@@ -1,0 +1,205 @@
+/* Navbar container */
+.navbar {
+    background-color: #8AA78C;
+    overflow: hidden;
+    font-family: arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#074f0a;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px white;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f3ecdc;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  body{
+    background-color:#cdcdcd;
+    display: grid;
+    place-items: center;
+    font-family: "Lato", Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+  }
+  h1{
+    color: #074f0a;
+    font-family: arial;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+  } 
+  h2{
+    color:#074f0a;
+    font-family: arial;
+    font-size: 20px;
+    text-align:center;
+    letter-spacing: 1px;
+  }
+  h3{
+    color:#f3ecdc;
+    background-color: #8AA78C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align:center;
+    letter-spacing: 1px;
+  }
+  p{
+    color:black;
+    font-family: arial;
+    font-size: 16px;
+    text-align: left;
+  }
+  ol{
+    color:black;    
+    font-family: arial;
+    font-size: 16px;
+    text-align: left;
+  }
+  button{
+    color:#074f0a;
+    background-color:#ffffff;
+    font-family: arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #074f0a;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+  }
+    /* bottom nav bar */
+    .bottom_nav, .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom_nav {
+        position: relative;
+        background-color: #fff;
+        padding: 20px;
+        transition: 0.5s;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    }
+    
+    .menu {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .bottom_nav input:checked ~ .menu {
+        width: 450px;
+    }
+    
+    .menu li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: #666;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    
+    .menu li a:hover {
+        color: #161919;
+    }
+    
+    .bottom_nav input {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        opacity: 0;
+    }
+    
+    .bottom_nav span {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        height: 4px;
+        border-radius: 50px;
+        background-color: #666;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    
+    .bottom_nav input:checked ~ span {
+        background-color: #f974a1;
+    }
+    
+    .bottom_nav span:nth-child(2) {
+        transform: translateY(-8px);
+    }
+    
+    .bottom_nav input:checked ~ span:nth-child(2) {
+        transform: translateY(0) rotate(-45deg);
+    }
+    .bottom_nav span:nth-child(3) {
+        transform: translateY(8px);
+    }
+    
+    .bottom_nav input:checked ~ span:nth-child(3) {
+        transform: translateY(0) rotate(45deg);
+    }
