@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    background: linear-gradient(180deg,#074f0a,#D46C76);
+}
+.container{
+    max-width: 700px;
+    width:100%;
+    background:white;
+    padding: 40px 40px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+/*line underneath the title*/
+.container .title::before{
+    content:'';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 250px;
+    background: linear-gradient(120deg,#074f0a,#D46C76);
+}
+.container form .user-details{
+    display:flow-root;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin:30px 0 15px 0;
+}
+.form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    margin-bottom: 15px;
+    width: calc(50% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display:block;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.user-details .input-box input{
+   height: 45px;
+   width: 100%;
+   outline:invert;
+   border-radius: 5px;
+   border:1px solid #ccc;
+   padding-left: 15px;
+   font-size: medium;
+   border-bottom-width: 2px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:#074f0a ;
+}
+form .button{
+    height:auto;
+    margin:auto;
+    cursor: pointer;
+    display: block;
+  }
+form .button input{
+    color:#074f0a;
+    background-color:#ffffff;
+    font-family: arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #074f0a;
+    height: 100%;
+    width: 100%; 
+    margin: auto;
+    cursor: pointer;
+    display: block;
+  }
